@@ -99,8 +99,9 @@ def temp_convertor(value,from_unit,to_unit):
          return (value - 32) * 5/9 if to_unit == "celsius" else (value -32) * 5/9 + 273.15 if to_unit == "kelvin" else value
     elif from_unit == "kelvin":
         return value - 273.15 if to_unit == "celsius" else (value -273.15) * 9/5+32 if to_unit == "fahranheit" else value
-    return value 
-
+    return value
+    
+result = 0.0
 
 #button for conversion
 if st.button ("convert"):
